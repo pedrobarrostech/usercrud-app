@@ -1,0 +1,8 @@
+rootProject.name = 'usercrud'
+include ':usercrud-domain'
+include ':usercrud-rest'
+include ':usercrud-data'
+
+project(':usercrud-domain').projectDir = "$rootDir/usercrud-domain" as File
+project(':usercrud-rest').projectDir = "$rootDir/usercrud-rest" as File
+project(':usercrud-data').projectDir = "$rootDir/usercrud-data" as File
